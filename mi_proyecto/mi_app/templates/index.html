@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'registrar_usuario' %}">Registrar Usuario</a></li>
+            <li><a href="{% url 'lista_usuarios' %}">Lista de Usuarios</a></li>
+            <!-- Agrega aquí más enlaces según tus necesidades -->
+        </ul>
+    </nav>
+    
+    {% block content %}
+    {% endblock %}
+    <h1>Registro de Nuevo Usuario</h1>
+    <form method="post" action="{% url 'registrar_usuario' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

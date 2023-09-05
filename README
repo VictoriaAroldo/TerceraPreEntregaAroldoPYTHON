@@ -1,0 +1,19 @@
+
+
+# Funciones #
+
+1. Registrar un usuario
+`/registro_usuario/`
+`mi_app/usuarios.html`
+`views.registrar_usuario`
+
+2. Lista de Usuarios:
+   - URL: `/lista_usuarios/`
+   - Plantilla HTML: `mi_app/lista_usuarios.html`
+   - Vista: `views.mostrar_clientes`
+
+# Código #
+
+HTML: `mi_app/templates`
+URL: `mi_proyecto/urls.py`
+VIEWS: `mi_app/views.py`
